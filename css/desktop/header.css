@@ -1,0 +1,963 @@
+.header {
+  width: 100%;
+  height: 170px;
+
+  .top {
+    width: inherit;
+    height: 60px;
+    & img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  .center {
+    width: inherit;
+    height: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    .logo {
+      width: 10%;
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .search {
+      width: 70%;
+      height: inherit;
+      display: flex;
+      align-items: center;
+      & svg {
+        position: absolute;
+        margin-right: 15px;
+      }
+      & input[type="text"] {
+        width: 600px;
+        height: 45px;
+        background-color: #f0f0f1;
+        border: none;
+        border-radius: 7px;
+        font-family: IRAN;
+        font-size: 12px;
+        padding-right: 45px;
+        outline: none;
+      }
+    }
+    .login {
+      width: 20%;
+      height: inherit;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      column-gap: 20px;
+      .register {
+        width: 130px;
+        height: 40px;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: IRAN;
+        border: 1px solid #dadada;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5px;
+        text-decoration: none;
+        color: black;
+      }
+      .line {
+        display: inline-block;
+        width: 1px;
+        height: 30px;
+        background-color: lightgray;
+      }
+    }
+  }
+  .bottom {
+    width: inherit;
+    height: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 2px solid #dadada;
+    .menu {
+      width: 80%;
+      height: inherit;
+      z-index: 100000;
+      .menu__Nav {
+        width: 100%;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+        column-gap: 40px;
+        padding-right: 30px;
+        position: relative;
+        .menu__item:first-child {
+          display: initial;
+        }
+        .menu__item {
+          width: fit-content;
+          height: inherit;
+          padding-top: 10px;
+          display: flex;
+          align-items: center;
+          .menu__item__link_1 {
+            display: block;
+            font-family: IRAN;
+            font-size: 12px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+          }
+          .menu__item__link {
+            font-family: IRAN;
+            font-size: 12px;
+            opacity: 0.7;
+            text-decoration: none;
+            color: black;
+            display: flex;
+            align-items: center;
+          }
+          .sub__menu {
+            width: 80%;
+            height: calc(100vh - 200px);
+            background-color: #f0f0f1;
+            position: absolute;
+            display: none;
+            transition: 100ms;
+          }
+          &:hover .sub__menu {
+            display: block;
+          }
+        }
+
+        .sub__menu__category {
+          width: 20%;
+          height: 100%;
+          overflow: auto;
+          direction: ltr;
+          .sub__menu__category__item {
+            width: 100%;
+            height: 50px;
+            .sub__menu__category__item__link {
+              column-gap: 5px;
+              width: 100%;
+              height: inherit;
+              background-color: lightgray;
+              font-family: IRAN;
+              font-size: 11px;
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              text-align: right;
+              transition: 200ms;
+              text-decoration: none;
+              color: black;
+              &:hover {
+                background-color: white;
+                color: red;
+              }
+            }
+            .sub__sub__menu {
+              width: 80%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              display: none;
+              direction: rtl;
+              padding: 15px;
+              .sub__mobile__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+                  padding-right: 50px;
+                  direction: rtl;
+                  font-size: 11px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__mobile__1,
+                .sub__mobile__2,
+                .sub__mobile__3,
+                .sub__mobile__4 {
+                  width: 22.8%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__mobile__1__links,
+                  .sub__mobile__2__links,
+                  .sub__mobile__3__links,
+                  .sub__mobile__4__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 10px;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                    text-decoration: none;
+                  }
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+
+              .sub__digital__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+
+                  direction: rtl;
+                  padding-right: 10px;
+                  font-size: 12px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__digital__1,
+                .sub__digital__2,
+                .sub__digital__3 {
+                  width: 25%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__digital__1__links,
+                  .sub__digital__2__links,
+                  .sub__digital__3__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 10px;
+                  }
+
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                    .red_line {
+                      color: red;
+                      padding-left: 5px;
+                    }
+                  }
+                }
+                .sub__digital__2 {
+                  width: 25%;
+                  height: auto;
+                  display: inline-block;
+                  .sub__digital__2__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    row-gap: 10px;
+                    font-size: 12px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                  }
+                }
+                .sub__digital__4 {
+                  width: 22%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__digital__4__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    row-gap: 10px;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                  }
+
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+              .sub__home__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+
+                  direction: rtl;
+                  padding-right: 20px;
+                  font-size: 12px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__home__1,
+                .sub__home__2,
+                .sub__home__3 {
+                  width: 32%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__home__1__links,
+                  .sub__home__2__links,
+                  .sub__home__3__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 10px;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                  }
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+              .sub__electrical__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+
+                  direction: rtl;
+                  padding-right: 40px;
+                  font-size: 12px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__electrical__1,
+                .sub__electrical__2,
+                .sub__electrical__3,
+                .sub__electrical__4 {
+                  width: 22.8%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__electrical__1__links,
+                  .sub__electrical__2__links,
+                  .sub__electrical__3__links,
+                  .sub__electrical__4__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 10px;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                  }
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+              .sub__clothes__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+
+                  direction: rtl;
+                  padding-right: 30px;
+                  font-size: 12px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__clothes__1,
+                .sub__clothes__2,
+                .sub__clothes__3,
+                .sub__clothes__4 {
+                  width: 23.6%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__clothes__1__links,
+                  .sub__clothes__2__links,
+                  .sub__clothes__3__links,
+                  .sub__clothes__4__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 10px;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                  }
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+              .sub__beauty__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+
+                  direction: rtl;
+                  padding-right: 30px;
+                  font-size: 12px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__beauty__1,
+                .sub__beauty__2,
+                .sub__beauty__3 {
+                  width: 31%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__beauty__1__links,
+                  .sub__beauty__2__links,
+                  .sub__beauty__3__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 10px;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                  }
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+              .sub__gifts__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+
+                  direction: rtl;
+                  padding-right: 30px;
+                  font-size: 12px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__gifts__1,
+                .sub__gifts__2,
+                .sub__gifts__3 {
+                  width: 31%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__gifts__1__links,
+                  .sub__gifts__2__links,
+                  .sub__gifts__3__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 10px;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                  }
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+              .sub__market__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+
+                  direction: rtl;
+                  padding-right: 30px;
+                  font-size: 12px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__market__1,
+                .sub__market__2,
+                .sub__market__3 {
+                  width: 31%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__market__1__links,
+                  .sub__market__2__links,
+                  .sub__market__3__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 10px;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                  }
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+              .sub__book__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+
+                  direction: rtl;
+                  padding-right: 30px;
+                  font-size: 12px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__book__1,
+                .sub__book__2,
+                .sub__book__3,
+                .sub__book__4 {
+                  width: 23.6%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__book__1__links,
+                  .sub__book__2__links,
+                  .sub__book__3__links,
+                  .sub__book__4__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 10px;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                  }
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+              .sub__toy__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+
+                  direction: rtl;
+                  padding-right: 30px;
+                  font-size: 12px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__toy__1,
+                .sub__toy__2,
+                .sub__toy__3,
+                .sub__toy__4 {
+                  width: 23.6%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__toy__1__links,
+                  .sub__toy__2__links,
+                  .sub__toy__3__links,
+                  .sub__toy__4__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 10px;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                  }
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+              .sub__tool__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+
+                  direction: rtl;
+                  padding-right: 30px;
+                  font-size: 12px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__tool__1,
+                .sub__tool__2,
+                .sub__tool__3,
+                .sub__tool__4 {
+                  width: 23.6%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__tool__1__links,
+                  .sub__tool__2__links,
+                  .sub__tool__3__links,
+                  .sub__tool__4__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 10px;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 11.6px;
+                  }
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+              .sub__car__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+
+                  direction: rtl;
+                  padding-right: 30px;
+                  font-size: 12px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__car__1,
+                .sub__car__2,
+                .sub__car__3,
+                .sub__car__4 {
+                  width: 23.6%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__car__1__links,
+                  .sub__car__2__links,
+                  .sub__car__3__links,
+                  .sub__car__4__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 10px;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                  }
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+              .sub__sport__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+
+                  direction: rtl;
+                  padding-right: 30px;
+                  font-size: 12px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__sport__1,
+                .sub__sport__2,
+                .sub__sport__3,
+                .sub__sport__4 {
+                  width: 23.6%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__sport__1__links,
+                  .sub__sport__2__links,
+                  .sub__sport__3__links,
+                  .sub__sport__4__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 12px;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                  }
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+              .sub__native__items {
+                width: 100%;
+                height: auto;
+                overflow: scroll;
+                direction: ltr;
+                .sub__blue__link {
+                  width: 100%;
+                  height: 40px;
+
+                  direction: rtl;
+                  padding-right: 30px;
+                  font-size: 12px;
+                  font-family: IRAN;
+                  & a {
+                    text-decoration: none;
+                    color: #1e9bbb;
+                  }
+                }
+                .sub__native__1,
+                .sub__native__2,
+                .sub__native__3,
+                .sub__native__4 {
+                  width: 23.6%;
+                  height: auto;
+                  display: inline-block;
+                  & a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                  .sub__native__1__links,
+                  .sub__native__2__links,
+                  .sub__native__3__links,
+                  .sub__native__4__links {
+                    display: flex;
+                    flex-flow: column wrap;
+                    direction: rtl;
+                    margin-left: auto;
+                    font-size: 11px;
+                    font-family: IRAN;
+                    opacity: 0.8;
+                    row-gap: 10px;
+                  }
+                  .black {
+                    font-weight: bold;
+                    font-size: 12px;
+                  }
+                  .red_line {
+                    color: red;
+                    padding-left: 5px;
+                  }
+                }
+              }
+            }
+            &:hover .sub__sub__menu {
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+    .choose__city {
+      width: 20%;
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      font-family: IRAN;
+      opacity: 0.8;
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f0f0f1;
+}
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: #c0c2c5;
+  border-radius: 5px;
+}

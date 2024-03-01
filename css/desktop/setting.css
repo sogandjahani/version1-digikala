@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    direction: rtl;
+}
+:root{
+    --font-family: IRAN;
+    --font-family-number:BNAZANIN;
+}
+@font-face {
+    font-family: BNAZANIN;
+    src: url('../../fonts/B_NAZANIN/BNazanin.eot');
+    src: url('../../fonts/B_NAZANIN/BNazanin.ttf');
+    src: url('../../fonts/B_NAZANIN/BNazanin.woff');
+    src: url('../../fonts/B_NAZANIN/BNazanin.woff2');
+}
+@font-face {
+    font-family: IRAN;
+    src: url('../../fonts/IRANYekanWeb-Medium.eot');
+    src: url('../../fonts/IRANYekanWeb-Medium.ttf');
+    src: url('../../fonts/IRANYekanWeb-Medium.woff');
+    src: url('../../fonts/IRANYekanWeb-Medium.woff2');
+}
+.wrapper{
+    width: 100%;
+}
+:root{
+    font-family: var();
+}
