@@ -966,3 +966,16 @@
   background-color: #c0c2c5;
   border-radius: 5px;
 }
+.before::before{
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: crimson;
+  transition: 300ms;
+}
+.before:hover::before{
+  width: 105px;
+}
