@@ -5,9 +5,9 @@
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  column-gap: 35px;
+  column-gap: 30px;
     & img {
-      width: 332px;
+      width: 322px;
       height: 241px;
       border-radius: 16px;
       object-fit: cover;

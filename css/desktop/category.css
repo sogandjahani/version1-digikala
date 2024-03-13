@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   .category__center {
-    width: 85%;
+    width: 1336px;
     height: inherit;
 
     .category_top {
@@ -27,7 +27,6 @@
       flex-flow: row wrap;
       justify-content: center;
       align-items: center;
-      column-gap: 10px;
       & a{
         text-decoration: none;
         color: black;
@@ -45,7 +44,7 @@
         }
         & p {
           font-family: var(--font-family);
-          font-size: 14px;
+          font-size: 12px;
           font-weight: normal;
         }
       }
@@ -57,7 +56,6 @@
       flex-flow: row wrap;
       justify-content: center;
       align-items: center;
-      column-gap: 10px;
       & a{
         text-decoration: none;
         color: black;
@@ -76,7 +74,7 @@
         }
         & p {
           font-family: var(--font-family);
-          font-size: 14px;
+          font-size: 12px;
           font-weight: normal;
         }
       }

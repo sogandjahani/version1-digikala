@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   .brand__Image__3__center {
-    width: 85%;
+    width: 90%;
     height: inherit;
     display: flex;
     flex-flow: row wrap;
@@ -13,9 +13,10 @@
     column-gap: 30px;
 
     & img {
-      width: 705px;
-      height: 275px;
+      width: 660px;
+      height: 265px;
       border-radius: 20px;
+      object-fit: cover;
     }
   }
 }

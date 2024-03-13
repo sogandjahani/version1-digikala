@@ -285,14 +285,11 @@ footer {
     }
   }
   .footer_7 {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
     .footer_7_top {
       display: flex;
       flex-flow: row;
       & a {
-        width: 212px;
+        width: 209px;
         height: 80px;
         display: flex;
         align-items: center;
@@ -310,7 +307,7 @@ footer {
       display: flex;
       flex-flow: row;
       & a{
-        width: 242px;
+        width: 239px;
         height: 80px;
         display: flex;
         align-items: center;

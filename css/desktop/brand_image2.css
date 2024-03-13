@@ -5,15 +5,15 @@
     display: flex;
     justify-content: center;
     .brand__image__2__center{
-        width: 85%;
+        width: 90%;
         height: inherit;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
         column-gap: 30px;
         & img{
-            width: 705px;
-            height: 275px;
+            width: 660px;
+            height: 264px;
             border-radius: 20px;
         }
     }

@@ -5,7 +5,7 @@
   justify-content: center;
   margin-top: 20px;
   .supermarket__center {
-    width: 85%;
+    width: 90%;
     height: 110px;
     background-color:#EDEFED;
     border-radius: 10px;
@@ -78,7 +78,7 @@
         display: flex;
         flex-flow: row wrap;
         column-gap: 33px;
-        margin-right: 153px;
+        margin-right: 113px;
         margin-bottom: 2px;
         position: absolute;
         bottom: 10px;
@@ -98,15 +98,18 @@
       }
     }
     .supermarket__left {
-      width: 20%;
+      width: 40%;
       height: inherit;
       position: absolute;
       left: 0;
       margin-left: 7%;
       display: flex;
       flex-flow: row wrap;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
+      background-image: url(../../images/supermarket/freshPattern.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
       .more__item{
         width: 144px;
         height: 50px;
